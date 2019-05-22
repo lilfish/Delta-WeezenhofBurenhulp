@@ -1,0 +1,95 @@
+.omschrijving {
+  padding-bottom: 0px;
+}
+.post_item {
+  background-color: rgba(76, 206, 210, 0.377);
+  padding: 5px;
+  border-radius: 25px;
+}
+.item_prev_img {
+  border-radius: 5px;
+  background-color: white;
+}
+.post_titel {
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+}
+.post_titel a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s linear;
+}
+.post_titel a:hover {
+  color: rgb(76, 206, 210);
+  transition: all 0.5s linear;
+}
+.item_content {
+  word-wrap: break-word;
+}
+.extraInfo {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 2s ease;
+  position: relative;
+}
+.extraInfo.expand {
+  max-height: 500px;
+}
+.backButton {
+  padding: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.postInfo h4,
+.postInfo .col-12,
+.postInfo * {
+  color: lightgrey;
+}
+
+.post_reply_box {
+  height: 80px;
+  padding: 5px;
+  background-color: rgba(76, 206, 210, 0.377);
+  border-radius: 25px;
+}
+.reply_date {
+  color: gray;
+  font-size: 14px;
+  padding: 5px;
+}
+.reply_name {
+  text-align: center;
+  width: 100%;
+  line-height: 60px;
+}
+.modal {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  margin: 40px 20px 140px 140px;
+  // display: none;
+  visibility: hidden;
+  border: solid 3px #00aad2;
+  border-radius: 20px;
+  top: 50px;
+}
+.modal.open {
+  visibility: visible;
+  // display: block;
+}
+.modal_close {
+  position: absolute;
+  top: 10;
+  right: 10;
+  background-color: #00aad2;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: 20px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer;
+}

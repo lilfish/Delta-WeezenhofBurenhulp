@@ -1,0 +1,47 @@
+.big_center_image{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 40px;
+    margin-right: auto;
+}
+
+.truncate {
+    text-overflow: ellipsis;
+    max-height: 180px!important;
+    /*BOTH of the following are required for text-overflow (overflow: hidden; and white-space: nowrap;)*/
+    overflow: hidden;
+    white-space: nowrap;
+    transition: max-height 0.25s ease-in;
+}
+.my_truncate_box{
+    transition: max-height 0.25s ease-in;
+    max-height: 2000px;
+    overflow: hidden;
+}
+.hamburger_menu {
+    max-height: 0!important;
+    transition: max-height 0.15s ease-out!important;
+    overflow: hidden!important;
+    display: block!important;
+}
+.hamburger_menu.is-active {
+    max-height: 1500px!important;
+    transition: max-height 0.25s ease-in!important;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100%;
+    }
+    .bm--card-equal-height {
+        display: block;
+        flex-direction: none;
+        height: auto;
+     }
+     .bm--card-equal-height .card-footer {
+        margin-top: auto;
+     }
+     
+  }
